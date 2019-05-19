@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href ="{{url_for('static', filename='main.css')}}">
+	<!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
+<style>
+@import url('https://fonts.googleapis.com/css?family=Lobster|Oswald|Play');
+</style>-->
+</head>
+<header class="pageHeader">
+	<ul >
+		<li><a href="./">Home</a></li>
+		<li><a href="./about">About</a></li>
+		<li><a href="./diceroller">DiceRoller</a></li>
+	</ul>
+</header>
+<main>
+<div class="page">
+	<nav >
+		<ul >
+			<li>item one</li>
+			<li>item two</li>
+			<li>item three</li>
+		</ul>
+	</nav>
+
+<div class="mainBody">
+{% block content %}
+
+{% endblock content %}
+</div>
+
+</div>
+</main>
+<footer class="navFooter">
+		<ul>
+			<li><a href="https://www.linkedin.com/in/marc-falzon-4aa5a64/">Linkedin</a></li>
+			<li><a href="https://github.com/fuzzygwalchmei">GitHub</a></li>
+			<li><a href="https://twitter.com/gwalmachi">Twitter</a></li>
+		</ul>
+</footer>
+</html>
+    <p class="details">
+      <a href="https://www.linkedin.com/in/marc-falzon-4aa5a64/">Linkedin</a><br>
+      <a href="https://github.com/fuzzygwalchmei">GitHub</a><br>
+      <a href="https://twitter.com/gwalmachi">Twitter</a><br>
+    </p>

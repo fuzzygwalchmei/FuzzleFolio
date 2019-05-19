@@ -1,0 +1,20 @@
+{% extends "educate_layout.html" %}
+
+{% block content %}
+    <div>
+
+        <img class="card_logo" src="{{url_for('static', filename='/cards/'+cardValue['card'])}}">
+
+        <br>
+        {{ cardValue['image'] }}
+        <br>
+        <form action="" method="post">
+            {{ form.submit() }}
+        </form>
+    </div>
+
+
+
+
+
+{% endblock content %}

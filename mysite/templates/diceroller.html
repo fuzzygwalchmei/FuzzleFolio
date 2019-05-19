@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+        <div>
+            <p>
+                This is the start of the dice roller website
+            </p>
+
+            <form action="" method="post">
+                <p>
+                {{ form.dicefield.label }}<br>
+                {{ form.dicefield(size=32) }}<br>
+                {{ form.submit() }}
+                </p>
+
+            </form>
+
+        </div>
+
+
+{% endblock content %}

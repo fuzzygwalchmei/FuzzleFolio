@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+        <div>
+            <p>
+                This is the start of the dice roller website
+            </p>
+
+            <form action="" method="post">
+                <p>
+                {{ form.dicefield.label }}<br>
+                {{ form.dicefield(size=32) }}<br>
+                {{ form.submit() }}
+                </p>
+
+            </form>
+
+        </div>
+        <div>
+            <h2>Test dataToRender</h2>
+            Dice String: {{dataToRender['myString']}}<br>
+            Roll Total: {{dataToRender['total']}}<br>
+            All Dice: {{dataToRender['myDice']|length}}<br>
+            <br>
+            <h2>dataToRender Dice</h2>
+            <table>
+                <th>Dice String</th><th>Rolls</th><th>Total</th>
+                {% for each in range(dataToRender['myDice']|length) %}
+                   <tr><td>{{dataToRender['myDice'][each]}}</td><td>{{dataToRender['indRolls'][each]}}</td><td>{{dataToRender['indRolls'][each]|sum}}</td></tr>
+                {% endfor %}
+            </table>
+
+
+        </div>
+
+
+{% endblock content %}

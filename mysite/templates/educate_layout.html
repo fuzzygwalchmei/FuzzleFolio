@@ -1,0 +1,31 @@
+<html id="main">
+  <head>
+    <title id="title">My Fuzzle Falzon</title>
+    <link rel="stylesheet" href ="{{url_for('static', filename='educate.css')}}">
+  </head>
+
+  <body>
+  <div class="img-div">
+    <img class="logo" src="{{url_for('static',filename='robot_head.png')}}" />
+    <h1>Fuzzy Falzon</h1>
+    <p class="details">
+      <a href="https://www.linkedin.com/in/marc-falzon-4aa5a64/">Linkedin</a><br>
+      <a href="https://github.com/fuzzygwalchmei">GitHub</a><br>
+      <a href="https://twitter.com/gwalmachi">Twitter</a><br>
+    </p>
+    <ul class="menu">
+      <li>Pick a Card</li>
+      <li>item 2 </li>
+      <li>item 3 </li>
+      <li>item 4 </li>
+    </ul>
+    </div>
+    <br>
+     {% block content %}
+
+     {% endblock content %}
+
+
+  </body>
+
+</html>
